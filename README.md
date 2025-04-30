@@ -8,20 +8,19 @@ Bem-vindo ao meu repositório de projetos desenvolvidos durante meus estudos de 
 
 | Pasta | Descrição |
 |-------|-----------|
-| `atv01-introducao-html` | Introdução ao HTML: tags básicas |
-| `atv02-tags-html` | Trabalhando com diferentes tags |
+| `atv01-introhtml` | Introdução ao HTML: tags básicas |
+| `atv02-tagshtml` | Trabalhando com diferentes tags |
 | `atv03-festival` | Projeto temático com HTML e CSS |
-| `atv04-css-basico` | Estilização com CSS puro |
+| `atv04-introcss` | Estilização com CSS puro |
 | `atv05-portfolio` | Meu primeiro portfólio online |
-| `atv06-css` | Prática adicional de CSS |
+| `atv06-sitenutricao` | Prática adicional de CSS |
 | `atv07-flexbox` | Layouts com Flexbox |
 | `atv08-grid` | Layouts com Grid |
 | `atv09-spotify` | Interface inspirada no Spotify |
-| `atv10-intro-JS` | Primeiros passos em JavaScript |
+| `atv10-introJS` | Primeiros passos em JavaScript |
 | `atv11-estrutura` | Estrutura de arquivos web |
-| `atv12-sistema-login` | Sistema simples de login |
+| `atv12-sistemalogin` | Sistema simples de login |
 | `atv13-loja` | Loja online com HTML e CSS |
-
 ---
 
 ## 🚀 Tecnologias utilizadas
