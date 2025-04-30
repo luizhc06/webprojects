@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .field { margin-bottom: 10px; }
+        label { display: inline-block; width: 80px; }
+        #mensagem { margin-top: 15px; font-weight: bold; }
+        #enviar:disabled { opacity: 0.5; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+
+    <h2>Faça login</h2>
+    <div class="field">
+        <label for="nome">Usuário:</label>
+        <input type="text" id="nome" placeholder="Digite seu usuário">
+    </div>
+    <div class="field">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite sua senha">
+        <button id="toggleSenha" type="button">Mostrar senha</button>
+    </div>
+    <button id="enviar" type="button">Enviar</button>
+    <p id="mensagem"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

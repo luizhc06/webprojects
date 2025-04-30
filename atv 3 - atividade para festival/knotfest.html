@@ -1,0 +1,104 @@
+<!--elementos usados e suas funcoes:
+deixei anotado aqui pra reciclar futuramente...
+
+- <p>: usado para paragrafo de texto, separa o conteudo de forma organizada.
+- <strong>: deixa o texto em negrito, destacando informacoes importantes.
+- <ul>: cria uma lista nao ordenada (sem numeros).
+- <li>: representa um item dentro de uma lista.
+- style dentro do <li>: permite mudar a aparencia do item, como cor, tamanho, espacamento etc. 
+   exemplo de uso: <li style="color: red;">texto vermelho</li>
+- <footer>: define o rodape da pagina, onde ficam informacoes adicionais.
+- <a>: cria um link para outra pagina ou site.
+- <br>: adiciona uma quebra de linha, usado para separar textos sem precisar de um novo <p>.
+- <input>: campo para o usuario digitar ou selecionar algo.
+- type="text": campo para digitar texto (nome, email, telefone).
+- type="radio": botoes para escolher uma opcao (pista, vip, camarote).
+- type="checkbox": opcao de marcar ou desmarcar (receber atualizacoes).
+- type="submit": botao para enviar o formulario.
+
+- w3schools (https://www.w3schools.com/html/) -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knotfest 2025 - O Maior Festival de Metal</title>
+  </head>
+  <body style="font-family: 'Arial Black', Arial, sans-serif; color: white; line-height: 1.6; margin: 0; padding: 20px; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://woomagazine.com.br/wp-content/uploads/2023/05/Knotfest-Brasil-1536x864.jpg'); background-size: cover; background-attachment: fixed;">
+    
+    <header style="text-align: center; padding: 40px; background: rgba(100,0,0,0.7); border-radius: 10px; margin-bottom: 30px;">
+      <h1 style="color: #ff0000; font-size: 2.5em; text-shadow: 2px 2px 4px black;">🔥 KNOTFEST BRASIL 2025 🔥</h1>
+      <h2 style="color: #ff4444;">30 Nov - 2 Dez | Sao Paulo - Autodromo de Interlagos</h2>
+      <p><strong>O INFERNO NA TERRA! O maior festival de metal do mundo chega ao Brasil</strong></p>
+    </header>
+
+    <section style="background: rgba(0,0,0,0.7); padding: 20px; margin: 20px 0; border-radius: 8px; border: 1px solid #ff0000;">
+      <h2 style="color: #ff4444; border-bottom: 2px solid #ff0000; padding-bottom: 10px;">🤘 LINE-UP MALDITO</h2>
+      <ul style="list-style-type: none; padding: 0;">
+        <li style="padding: 10px; margin: 5px 0; background: rgba(70,0,0,0.5); border-left: 4px solid #ff0000;">SLIPKNOT (Show Exclusivo)</li>
+        <li style="padding: 10px; margin: 5px 0; background: rgba(70,0,0,0.5); border-left: 4px solid #ff0000;">Bring Me The Horizon</li>
+        <li style="padding: 10px; margin: 5px 0; background: rgba(70,0,0,0.5); border-left: 4px solid #ff0000;">Deftones</li>
+        <li style="padding: 10px; margin: 5px 0; background: rgba(70,0,0,0.5); border-left: 4px solid #ff0000;">Trivium</li>
+        <li style="padding: 10px; margin: 5px 0; background: rgba(70,0,0,0.5); border-left: 4px solid #ff0000;">Gojira</li>
+        <li style="padding: 10px; margin: 5px 0; background: rgba(70,0,0,0.5); border-left: 4px solid #ff0000;">Megadeth</li>
+        <li style="padding: 10px; margin: 5px 0; background: rgba(70,0,0,0.5); border-left: 4px solid #ff0000;">Ghost</li>
+        <li style="padding: 10px; margin: 5px 0; background: rgba(70,0,0,0.5); border-left: 4px solid #ff0000;"><strong>+ 20 BANDAS CONFIRMADAS</strong></li>
+      </ul>
+    </section>
+
+    <section style="background: rgba(0,0,0,0.7); padding: 20px; margin: 20px 0; border-radius: 8px; border: 1px solid #ff0000;">
+      <h3 style="color: #ff4444; border-bottom: 2px solid #ff0000; padding-bottom: 10px;">⚡️ EXPERIENCIA KNOTFEST</h3>
+      <p>
+        • Mosh Pits e Wall of Death<br>
+        • Palco com 100m2 de chamas<br>
+        • Parque de horrores "The Slaughterhouse"<br>
+        • Exposicao de arte macabra<br>
+        • Praca de alimentacao tematica
+      </p>
+    </section>
+
+    <section style="background: rgba(0,0,0,0.7); padding: 20px; margin: 20px 0; border-radius: 8px; border: 1px solid #ff0000;">
+      <h3 style="color: #ff4444; border-bottom: 2px solid #ff0000; padding-bottom: 10px;">🎟 INGRESSOS</h3>
+      <p><strong>Vendas a partir de 01/09</strong></p>
+      <p>PISTA PREMIUM • PISTA COMUM • CAMAROTES VIP</p>
+      <p><a href="#" style="color: #ff4444; text-decoration: none; font-weight: bold;">GARANTA SEU LUGAR NO INFERNO</a></p>
+    </section>
+
+    <section>
+      <h3>📝 Inscreva-se</h3>
+      <form>
+        <p>Nome:</p>
+        <input type="text" name="nome" required>
+    
+        <p>E-mail:</p>
+        <input type="text" name="email" required>
+    
+        <p>Telefone:</p>
+        <input type="text" name="telefone" required>
+    
+        <p>Escolha seu ingresso:</p>
+        <input type="radio" name="ingresso" value="pista"> Pista<br>
+        <input type="radio" name="ingresso" value="vip"> VIP<br>
+        <input type="radio" name="ingresso" value="camarote"> Camarote<br>
+    
+        <p>
+          <input type="checkbox" name="notificacoes"> Receber atualizacoes por e-mail
+        </p>
+    
+        <p><input type="submit" value="Enviar Inscricao"></p>
+      </form>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; background: rgba(0,0,0,0.9); margin-top: 40px; border-radius: 10px;">
+      <p>Realizacao: Slipknot e partners | Classificacao 18+</p>
+      <p>
+        <a href="#" style="color: #ff4444; text-decoration: none; font-weight: bold;">➤ Ingressos</a> | 
+        <a href="#" style="color: #ff4444; text-decoration: none; font-weight: bold;">➤ Programacao</a> | 
+        <a href="#" style="color: #ff4444; text-decoration: none; font-weight: bold;">➤ Regras</a>
+      </p>
+      <p>© 2025 Knotfest Brasil - Todos os direitos reservados</p>
+    </footer>
+
+  </body>
+</html>

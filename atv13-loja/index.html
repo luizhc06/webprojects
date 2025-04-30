@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulação de Compra</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Loja Online - Carrinho de Compras</h1>
+
+  <div id="adicionar-container">
+    <h2>Adicionar Produto</h2>
+    <input type="text" id="produto-nome" placeholder="Nome do produto" />
+    <input type="number" id="produto-preco" placeholder="Preço (R$)" step="0.01" min="0" />
+    <button id="btn-adicionar">Adicionar ao Carrinho</button>
+  </div>
+
+  <div id="carrinho-container">
+    <h2>Itens no Carrinho</h2>
+    <ul id="lista-carrinho"></ul>
+    <p id="total"></p>
+    <button id="btn-finalizar">Finalizar Compra</button>
+    <p id="mensagem"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

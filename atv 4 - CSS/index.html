@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução CSS</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #7ad9ff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h1{
+            color: blue;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .destaque {
+            background-color: yellow;
+            font-size: 18px;
+            border: 2px dashed red;
+            padding: 10px;
+        }
+
+        #especial{
+            background-color: purple;
+            margin: 20px;
+            padding: 15px;
+            border: 2px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!--CSS Inline-->
+    <h1>Exemplo de CSS Interno, Externo e Inline</h1>
+    <p style="color: red; font-size: 20px;">Esse é um parágrafo com CSS Inline</p>
+    
+    <!--Classe-->
+    <p class="destaque">Esse é um parágrafo com CSS Classe</p>
+
+    <!--ID-->
+    <div id="paragrafo-externo">Esse é um parágrafo com CSS ID</div>
+
+    <!--CSS Externo-->
+    <div class= "externo">Este é um exemplo de CSS externo</div>
+
+</body>
+</html>

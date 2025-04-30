@@ -1,0 +1,77 @@
+:root {
+    --verde: #28a745;
+    --vermelho: #dc3545;
+    --cinza: #6c757d;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h1, h2 {
+    margin-bottom: 10px;
+  }
+  
+  #adicionar-container,
+  #carrinho-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  #produto-nome,
+  #produto-preco {
+    width: calc(50% - 10px);
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--verde);
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #lista-carrinho {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+  }
+  
+  #lista-carrinho li {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  #total {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  #mensagem {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  #mensagem.sucesso { color: var(--verde); }
+  #mensagem.erro    { color: var(--vermelho); }
