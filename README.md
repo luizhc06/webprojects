@@ -21,6 +21,9 @@ Bem-vindo ao meu repositório de projetos desenvolvidos durante meus estudos de 
 | `atv11-estrutura` | Estrutura de arquivos web |
 | `atv12-sistemalogin` | Sistema simples de login |
 | `atv13-loja` | Loja online com HTML e CSS |
+| `atv14-eventos` | Saudação / Troca da cor do botão |
+| `atv15-contacliques` | Site simples para contar cliques |
+| `atv16-calc.desconto` | Calcula os descontos de uma compra|
 ---
 
 ## 🚀 Tecnologias utilizadas
