@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta Cliques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #like-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #like-button:hover {
+            background-color: #0056b3;
+        }
+        #greeting {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo ao Contador de Cliques!</h1>
+    <input type="text" id="name-input" placeholder="Digite seu nome" />
+    <button id="like-button">Curtir</button>
+    <p id="greeting"></p>
+    <p id="click-count">Cliques: 0</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
