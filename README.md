@@ -24,6 +24,7 @@ Bem-vindo ao meu repositório de projetos desenvolvidos durante meus estudos de 
 | `atv14-eventos` | Saudação / Troca da cor do botão |
 | `atv15-contacliques` | Site simples para contar cliques |
 | `atv16-calc.desconto` | Calcula os descontos de uma compra|
+| `atv17-funcaoarray` | Funções e Arrays|
 ---
 
 ## 🚀 Tecnologias utilizadas
