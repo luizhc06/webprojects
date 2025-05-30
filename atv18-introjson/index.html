@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage - Exemplo</title>
+    <style>
+        body.dark {
+            background: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo(a)</h1>
+    <p id="mensagem"></p>
+
+    <input type="text" id="nomeInput" placeholder="Digite seu nome:">
+    <input type="number" id="idadeInput" placeholder="Digite sua idade:">
+    <br><br>
+    <button id="salvarNomeBtn">Salvar nome</button>
+    <button id="removerNomeBtn">Remover nome</button>
+    <button id="salvarIdadeBtn">Salvar idade</button>
+    <button id="limparStorageBtn">Limpar Storage</button>
+    <button id="trocarTemaBtn">Trocar tema</button>
+
+    <script>
+        function atualizarMensagem() {
+            const nome = localStorage.getItem("nomeUsuario");
+            const idade = localStorage.getItem("idadeUsuario");
+            let msg = "";
+            if (nome) msg += `Olá, ${nome}! `;
+            if (idade) msg += `Idade: ${idade}`;
+            document.getElementById("mensagem").innerText = msg;
+        }
+
+        function salvarNome() {
+            const nome = document.getElementById("nomeInput").value;
+            localStorage.setItem("nomeUsuario", nome);
+            atualizarMensagem();
+        }
+
+        function removerNome() {
+            localStorage.removeItem("nomeUsuario");
+            atualizarMensagem();
+        }
+
+        function salvarIdade() {
+            const idade = document.getElementById("idadeInput").value;
+            localStorage.setItem("idadeUsuario", idade);
+            atualizarMensagem();
+        }
+
+        function limparStorage() {
+            localStorage.clear();
+            atualizarMensagem();
+        }
+
+        function trocarTema() {
+            document.body.classList.toggle("dark");
+        }
+
+        document.getElementById("salvarNomeBtn").addEventListener("click", salvarNome);
+        document.getElementById("removerNomeBtn").addEventListener("click", removerNome);
+        document.getElementById("salvarIdadeBtn").addEventListener("click", salvarIdade);
+        document.getElementById("limparStorageBtn").addEventListener("click", limparStorage);
+        document.getElementById("trocarTemaBtn").addEventListener("click", trocarTema);
+
+        // Atualiza mensagem ao carregar
+        atualizarMensagem();
+    </script>
+</body>
+</html>
